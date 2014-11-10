@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Wikitikkitembo::Application.config.secret_key_base = '54405f8887856f7c5a164188b036c6b1ef7d9633b0a1baeffd976ae454ae43f1365ad297a754207ab52c0f9c6723ca86bb276523d4d86cec00221f4054dd595d'
+Wikitikkitembo::Application.config.secret_key_base = ENV['SECRET_KEY_BASE']

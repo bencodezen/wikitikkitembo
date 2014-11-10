@@ -39,6 +39,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use Devise for user authentication.
+gem 'devise'
+
+# Use Figaro to configure environment variables.
+gem 'figaro', '1.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
