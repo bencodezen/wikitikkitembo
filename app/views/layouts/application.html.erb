@@ -8,6 +8,14 @@
 </head>
 <body>
 
+<h1><%= link_to "WikiTikkiTembo", root_path %></h1>
+
+<% if current_user %>
+  <p>Hello <%= current_user.name %>! || <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></p>
+<% else %>
+  <p><%= link_to "Sign Up", new_user_registration_path %> || <%= link_to "Sign In", new_user_session_path %></p>
+<% end %>
+
 <%= yield %>
 
 </body>
