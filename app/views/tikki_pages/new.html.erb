@@ -1,2 +1,9 @@
-<h1>TikkiPages#new</h1>
-<p>Find me in app/views/tikki_pages/new.html.erb</p>
+<h1>Create a New TikkiPage</h1>
+
+<%= form_for @tikki_page do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+  <%= f.submit "Save" %>
+<% end %>

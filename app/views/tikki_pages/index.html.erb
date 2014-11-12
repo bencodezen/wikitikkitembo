@@ -1,6 +1,14 @@
 <h1>TikkiPages#index</h1>
 
-  <p>There are posts!</p>
+<% if @tikki_pages.count > 0 %>
+  <ul>
+  <% @tikki_pages.each do |tpage| %>
+    <li><%= link_to tpage.title, tikki_page_path(tpage) %></li>
+    <ul>
+      <li><%= tpage.body %></li>
+    </ul>
+  <% end %>
+  </ul>
+<% end %>
 
-  <p>No posts!</p>
-
+ 

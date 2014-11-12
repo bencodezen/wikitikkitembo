@@ -1,2 +1,4 @@
-<h1>TikkiPages#show</h1>
-<p>Find me in app/views/tikki_pages/show.html.erb</p>
+<h1><%= @tikki_page.title %></h1>
+<p><%= @tikki_page.body %></p>
+
+<small><%= link_to "Edit", edit_tikki_page_path %></small>
